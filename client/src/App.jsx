@@ -24,7 +24,7 @@ export default function App() {
         return acc;
       }, {});
       setRoomData(grouped);
-      toast.info("🔔 Sensor status updated!");
+      toast.info(" Sensor status updated!");
     });
 
     return () => {
@@ -45,7 +45,7 @@ export default function App() {
     <div className="min-h-screen bg-gray-100 p-8">
       <ToastContainer position="top-right" />
       <h1 className="text-4xl font-bold mb-8 text-center">
-         Sensor Dashboard
+        🍌 Sensor Dashboard 
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {Object.entries(roomData).map(([roomId, room]) => (
